@@ -1,0 +1,56 @@
+.header{
+    height: 100vh;
+    background-image: url('../assets/images/banner1.png');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* a:hover{
+    background-color: white;
+    border-radius: 15px;
+    display: inline-block;
+} */
+
+.navbar{
+box-shadow: 0 4px 28px black;
+}
+
+.title {
+    height: 100vh;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    /* float: left; */
+    /* display:inline; */
+    /* display: block; */
+}
+
+::-webkit-scrollbar{
+    width: 20px;
+}
+
+::-webkit-scrollbar-track{
+    background: blue;
+}
+
+::-webkit-scrollbar-thumb{
+    background: black;
+}
+
+#berita{
+    height: 200vh;
+    /* background-color: black; */
+    /* background-image: url('../assets/images/our_img4.jpg'); */
+}
+
+#aberita{
+    /* margin-left: 500px; */
+    float: right;
+}
+
+.lkcm:hover{
+   cursor: pointer;
+}

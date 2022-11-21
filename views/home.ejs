@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPL-FoodBlogger</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+
+<body>
+    <div id="beranda" class="header">
+<nav class="navbar navbar-expand-lg bg-transparent">
+    <div class="container">
+        <a class="navbar-brand  text-light" href="#"><h2>
+            RPL-FoodBlogger</h2></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active text-dark" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled text-dark" aria-current="page" href="#">-</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-dark" aria-current="page" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled text-dark" aria-current="page" href="#">-</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-dark" aria-current="page" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- TITLE -->
+    <div class="title">
+        <div class="container">
+        <h1 class="text-light">Bloggeer</h1>
+        <!-- <br> -->
+        <h3 class="text-light">Landing Page 2022</h3>
+        <!-- <br> -->
+        <h6 class="text-light">Selamat Datang Di Website <b>RPL-FoodBlogger</b></h6>
+        </h1>
+
+        <p>
+            <a href="#berita" class="btn btn-secondary btn-outline-light px-3 mt-3">Favorite</a>
+        </p>
+        </div>
+    </div>
+    </div>
+        <!-- TITLE END -->
+
+    <div id="berita" class="container-fluid mt-2">
+        <div class="container">
+<h1 class="text-light text-center bg-dark p-2">Latest News</h1>
+
+<% fill.forEach(function(fill){ %>
+<div class="row shadow">
+    <div class="col">
+        <!-- <img src="../assets/images/burger.jpeg" width="100%" class="m-2"> -->
+        <img src="../assets/images/<%= data.gambar %>" width="100%" class="m-2">
+    </div>
+    <div class="col">
+        <h3>
+          
+            <%= fill.judul %>
+
+            </h3>
+        <br>
+        <p><b>
+     
+            <%= fill.isi %>
+       </p>
+       <div>
+        <div class="row">
+            <div class="col">  
+                Penulis : 
+                    <%= fill.penulis %>
+                     
+            </div>
+                <div class="col">
+<img class="lkcm" src="../assets/images/like.png" alt="">
+
+    <%= fill.likes %> Likes
+       
+                </div>
+                    <div class="col">
+<img class="lkcm" src="../assets/images/comm.png" width="27px">
+
+        <%= fill.comments %> Comments
+
+                    </div>
+        </div>
+       </div>
+
+        <a id="aberita" href="#beranda" class="btn btn-primary btn-outline-light px-3 mt-3">↑↑↑</a>
+    </div>
+</div>
+<% }); %>
+
+        </div>
+            </div>
+
+   
+        <div class="container-fluid text-center bg-success text-light mb-4 p-3">
+
+Copyright &copy; Fariz - 2022
+
+<p>
+    FoodBlogger 2022 - RPL - SMKS Taruna Persada Dumai
+</p>
+
+    <img id="fb" src="../assets/images/Food-blog.png" width="250px">
+        </div>
+  
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
